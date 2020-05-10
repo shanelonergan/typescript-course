@@ -20,5 +20,8 @@
   "devDependencies": {
     "lite-server": "^2.5.4",
     "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "@types/node": "^12.7.4"
   }
 }
