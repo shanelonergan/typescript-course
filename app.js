@@ -1,15 +1,18 @@
-// Union types
-function combine(input1, input2, resultConversion) {
-    var result;
-    if (typeof input1 === 'number' && typeof input2 === 'number' || resultConversion === 'as-number') {
-        result = +input1 + +input2;
-    }
-    else {
-        result = input1.toString() + input2.toString();
-    }
-    return result;
+function add(n1, n2) {
+    return n1 + n2;
 }
-var combinedAges = combine(30, 26, 'as-number');
-console.log(combinedAges);
-var combinedNames = combine('Max', 'Anna', 'as-string');
-console.log(combinedNames);
+// use void if a function doesn't not have a return value
+function printResult(num) {
+    console.log('Result' + num);
+}
+function addAndHandle(n1, n2, cb) {
+    var result = n1 + n2;
+    cb(result);
+}
+printResult(add(5, 12));
+var combineValues;
+combineValues = add;
+console.log(combineValues(8, 8));
+addAndHandle(10, 20, function (result) {
+    console.log(result);
+});
