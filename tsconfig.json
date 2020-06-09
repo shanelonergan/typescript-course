@@ -9,12 +9,17 @@
         //     "scripthost",
         // ]
         "sourceMap": true,
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "removeComments": true,
+        "noEmitOnError": true,
+        "strict": true
     },
     "exclude": [
-        "basics.ts",
-        "data-types.ts",
-        "functions.ts",
-        "union-aliases.ts",
-        "unknown-never.ts"
+        "src/basics.ts",
+        "src/data-types.ts",
+        "src/functions.ts",
+        "src/union-aliases.ts",
+        "src/unknown-never.ts"
     ]
 }
